@@ -82,13 +82,8 @@ const slider = () => {
 
     onAnimateFrame()
 
-    ul[0].parentNode.addEventListener('mouseover', e => {
-        offAnimateFrame()
-    })
-
-    ul[0].parentNode.addEventListener('mouseleave', e => {
-        onAnimateFrame() 
-    })
+    ul[0].parentNode.addEventListener('mouseover', offAnimateFrame)
+    ul[0].parentNode.addEventListener('mouseleave', onAnimateFrame)
 
 }
 
