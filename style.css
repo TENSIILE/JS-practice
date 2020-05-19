@@ -1,0 +1,130 @@
+.portfolio-item img {
+    height: auto;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+
+.portfolio-content {
+    position: relative;
+    height: 775px;
+    margin: 0 auto;
+    display: block;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    line-height: 3;
+}
+
+body .container {
+    max-width: 1140px;
+}
+.portfolio {
+    padding: 5rem 0;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+
+body h2 {
+    text-align: center;
+    font-size: 3.6rem;
+    font-weight: 300;
+    margin-bottom: 10rem;
+}
+
+
+.portfolio-item {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    width: 100%;
+    opacity: 0;
+    -webkit-transition: opacity .5s;
+    transition: opacity .5s;
+}
+
+.portfolio-item-active {
+    opacity: 1;
+    -webkit-transition: opacity .5s;
+    transition: opacity .5s;
+}
+
+.portfolio-dots {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    margin: 20px auto 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    z-index: 5;
+}
+
+.portfolio-dots .dot-active {
+    background-color: #19b5fe;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.portfolio-dots .dot {
+    cursor: pointer;
+    height: 16px;
+    width: 16px;
+    margin: 0 10px;
+    border-radius: 50%;
+    border: solid #fff;
+    display: inline-block;
+    -webkit-transition: background-color,-webkit-transform .4s;
+    transition: background-color,transform .4s,-webkit-transform .4s;
+}
+
+.portfolio-btn.prev {
+    left: 20px;
+    background-image: url(images/icons/left-arrow.svg);
+    background-position: 25% 50%;
+}
+.portfolio-btn.next {
+    right: 20px;
+    background-image: url(images/icons/right-arrow.svg);
+    background-position: 75% 50%;
+}
+
+.portfolio-btn {
+    position: absolute;
+    cursor: pointer;
+    top: 50%;
+    z-index: 5;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0,0,0,.5);
+    background-repeat: no-repeat;
+    background-size: 34px;
+    border-radius: 50%;
+    -webkit-transition: background-color .2s;
+    transition: background-color .2s;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+}
